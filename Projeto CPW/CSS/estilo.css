@@ -1,0 +1,419 @@
+/* =========================================
+   1. RESETS E VARIÁVEIS GLOBAIS ( PELO AMOR DE CRISTO EU FIZ ISSO EM  3 HRS RELEVA SE NAO TIVER PERFEITO)
+   TEM COISAS QUE O PROFESSOR NAO PASSOU MAS EU VI EM VIDEOAULAS E PEDI AJUDA DA IA PRA ME ENSINAR UMAS COISAS DO HTML E CSS)
+   ========================================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --gray-text: #a1a1aa;
+    --gray-icon: #d1d5db;
+    --bg-placeholder: #f4f4f5;
+    --border-color: #f3f4f6;
+    --bg-faq: #f4f4f5;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    -webkit-font-smoothing: antialiased;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: color 0.2s ease;
+}
+
+/* =========================================
+   2. COMPONENTES GLOBAIS (Header, Hero, etc)
+   ========================================= */
+
+/* Header */
+.header {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 1.5rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 900;
+    font-size: 1.25rem;
+    line-height: 1.2;
+    letter-spacing: -0.025em;
+}
+
+.logo sup {
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.nav-links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 0.875rem;
+    color: var(--gray-text);
+    font-weight: 500;
+}
+
+.nav-links a:hover {
+    color: #000000;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    margin-top: 4rem;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    margin-bottom: 0.25rem;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    color: var(--gray-text);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 0.625rem 2rem;
+    border-radius: 9999px;
+    font-size: 0.875rem;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #1f2937;
+}
+
+/* Main Banner Placeholder (Banner retangular principal) */
+.banner-section {
+    margin-top: 4rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.main-banner {
+    background-color: var(--bg-placeholder);
+    width: 100%;
+    aspect-ratio: 21 / 9;
+    border-radius: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+/* Formas Geométricas Universais (Para os placeholders) */
+.shape-square { width: 4rem; height: 4rem; background-color: #ffffff; }
+.shape-circle { width: 4rem; height: 4rem; background-color: #ffffff; border-radius: 50%; }
+.shape-triangle { width: 4rem; height: 4rem; fill: #ffffff; }
+
+.shape-square-lg { width: 5rem; height: 5rem; background-color: #ffffff; }
+.shape-circle-lg { width: 5rem; height: 5rem; background-color: #ffffff; border-radius: 50%; }
+.shape-triangle-lg { width: 5rem; height: 5rem; fill: #ffffff; }
+
+/* Catalog Header (Títulos centrais das páginas) */
+.catalog-header {
+    text-align: center;
+    margin-top: 8rem;
+    padding: 0 1rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.catalog-header h2 {
+    font-size: 1.75rem;
+    font-weight: 800;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+}
+
+.catalog-header p {
+    font-size: 1.25rem;
+    color: var(--gray-text);
+    font-weight: 700;
+    letter-spacing: -0.025em;
+    line-height: 1.2;
+}
+
+/* Grid de Ícones (Features - Usado nas 3 páginas) */
+.features-section {
+    margin-top: 6rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    row-gap: 4rem;
+    column-gap: 1rem;
+    text-align: center;
+}
+
+.feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.feature-icon {
+    width: 2rem;
+    height: 2rem;
+    stroke: var(--gray-icon);
+    fill: none;
+    stroke-width: 2;
+    margin-bottom: 1rem;
+}
+
+.feature-item span {
+    font-size: 0.875rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+}
+
+/* =========================================
+   3. COMPONENTES ESPECÍFICOS: PÁGINA DE FILMES
+   ========================================= */
+
+/* Grid de 4 quadrados grandes */
+.grid-section {
+    margin-top: 3rem;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    width: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.grid-box {
+    background-color: var(--bg-placeholder);
+    aspect-ratio: 1 / 1;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.content-blocks-section {
+    margin-top: 8rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.block-banner {
+    background-color: var(--bg-placeholder);
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border-radius: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.block-text {
+    max-width: 450px;
+}
+
+.block-text h3 {
+    font-size: 1rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.block-text p {
+    font-size: 0.875rem;
+    color: var(--gray-text);
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+/* FAQ Accordion (Perguntas Frequentes) */
+.faq-section {
+    margin-top: 8rem;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.faq-item {
+    background-color: var(--bg-faq);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.faq-item summary {
+    display: flex;
+    align-items: center;
+    padding: 1rem 1.25rem;
+    font-size: 0.875rem;
+    font-weight: 600;
+    cursor: pointer;
+    list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.faq-item summary span {
+    font-weight: 400;
+    color: var(--gray-text);
+    margin-right: 0.75rem;
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+}
+
+.faq-item[open] summary span {
+    transform: rotate(45deg);
+}
+
+.faq-content {
+    padding: 0 1.25rem 1.25rem 3rem;
+    font-size: 0.875rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+/* =========================================
+   5. COMPONENTES ESPECÍFICOS: ANIMAÇÕES
+   ========================================= */
+
+/* Rankings Section (#1, #2, #3) */
+.rankings-section {
+    margin-top: 8rem;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 4rem 1rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.ranking-item h2 {
+    font-size: 3.5rem;
+    font-weight: 900;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    color: #000;
+}
+
+.ranking-item span {
+    font-size: 0.875rem;
+    color: var(--gray-text);
+    font-weight: 600;
+}
+
+
+.footer {
+    margin-top: 8rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 3rem 1rem 6rem 1rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.footer-col a:hover {
+    color: #000000;
+}
+/* =========================================
+   6. FOOTER GLOBAL
+   ========================================= */
+
+.footer {
+    margin-top: 8rem;
+    max-width: 1024px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    padding: 4rem 2rem 6rem 2rem;
+    border-top: 1px solid #f3f4f6; /* Linha cinza clara no topo */
+    background-color: #ffffff;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cria as 4 colunas com tamanhos iguais */
+    gap: 2rem;
+    align-items: start;
+}
+
+.footer-col {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem; /* Espaçamento entre os links */
+    font-size: 0.85rem;
+}
+
+.footer-title {
+    font-weight: 800;
+    color: #000000;
+    margin-bottom: 0.5rem;
+}
+
+.footer-col a {
+    color: #a1a1aa; /* Cor cinza para os links */
+    text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
+}
+
+.footer-col a:hover {
+    color: #000000; /* Fica preto ao passar o mouse */
+}
