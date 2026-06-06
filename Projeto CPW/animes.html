@@ -4,205 +4,127 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Recomendações de Animações - Animações & Shonen Jump</title>
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/estiloalt.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    
 </head>
-<body>
+<body class="theme-minimal-light">
 
-    <header class="header">
-        <div class="logo">Recomendações de Animações<sup>&reg;</sup></div>
-        <nav class="nav-links">
+    <header class="hdr-clean">
+        <div class="logo-clean">Recomendações de Animações<sup class="tm-clean">&reg;</sup></div>
+        <nav class="nav-clean">
             <a href="filmes.html">Filmes</a>
             <a href="series.html">Séries</a>
-            <a href="#">Início</a>
+            <a href="#" class="active">Início</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Explosão Shonen Jump.</h1>
-        <p>Os melhores animes & animações em destaque.</p>
-        <button class="btn">Explorar</button>
+    <section class="hero-clean">
+        <h1 class="title-clean">Explosão Shonen Jump.</h1>
+        <p class="subtitle-clean">Os melhores animes & animações em destaque.</p>
+        <button class="btn-clean">Explorar</button>
     </section>
 
-    <section class="banner-section">
-        <div class="main-banner">
-            <div class="shape-square"></div>
-            <div class="shape-circle"></div>
-            <svg class="shape-triangle" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                <path d="M32 0L64 64H0L32 0Z" />
-            </svg>
+    <section class="vid-section-clean">
+        <div class="vid-wrapper-clean">
+            <!-- Tamanho e arredondamento mantidos direto na tag para garantir a estética da imagem -->
+            <video src="Video/PERFEICAO.mp4" width="1000" height="562" style="border-radius: 24px; object-fit: cover; background-color: #000;" autoplay loop muted playsinline></video>
         </div>
     </section>
 
-    <section class="features-section">
-        <div class="features-grid">
-            
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"></path></svg>
-                <span>Ação intensa</span>
-            </div>
-            
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 2c0 0-5 6.5-5 11a5 5 0 0 0 10 0c0-4.5-5-11-5-11Z"></path></svg>
-                <span>Ranking semanal</span>
-            </div>
+    <!-- A seção de "features" com os ícones foi completamente removida aqui -->
 
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg>
-                <span>Favoritos top</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx="9" cy="7" r="4"></circle><path d="M23 21v-2a4 4 0 0 0-3-3.87"></path><path d="M16 3.13a4 4 0 0 1 0 7.75"></path></svg>
-                <span>Comunidade ativa</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6"></path><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18"></path><path d="M4 22h16"></path><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"></path><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"></path><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"></path></svg>
-                <span>Top personagens</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H20v20H6.5a2.5 2.5 0 0 1 0-5H20"></path></svg>
-                <span>Gêneros vastos</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="2.18" ry="2.18"></rect><line x1="7" y1="2" x2="7" y2="22"></line><line x1="17" y1="2" x2="17" y2="22"></line><line x1="2" y1="12" x2="22" y2="12"></line><line x1="2" y1="7" x2="7" y2="7"></line><line x1="2" y1="17" x2="7" y2="17"></line><line x1="17" y1="17" x2="22" y2="17"></line><line x1="17" y1="7" x2="22" y2="7"></line></svg>
-                <span>Trailers HD</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M2 4l3 12h14l3-12-6 7-4-7-4 7-6-7zm3 16h14"></path></svg>
-                <span>Premium vibe</span>
-            </div>
-
-        </div>
-    </section>
-
-    <section class="catalog-header">
-        <h2>Descubra as animações e animes mais aclamados pela comunidade em um portal inspirado no universo Shonen Jump, com banners estonteantes e rankings atualizados semanalmente.</h2>
+    <section class="intro-clean">
+        <h2>Descubra as animações e animes mais aclamados pela comunidade em um portal inspirado no universo Shonen Jump.</h2>
         <p>Misturamos a estética editorial com um layout moderno de streaming e recomendações exclusivas para você!</p>
     </section>
 
-    <section class="content-blocks-section">
+    <section class="blocks-clean">
         
-        <div class="content-block">
-            <div class="block-banner">
-                <div class="shape-square"></div>
-                <div class="shape-circle"></div>
-                <svg class="shape-triangle" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M32 0L64 64H0L32 0Z" />
-                </svg>
-            </div>
-            <div class="block-text">
+        <div class="block-item-clean">
+            <div class="block-img-placeholder"></div>
+            <div class="block-txt-clean">
                 <h3>Banners estilizados - Grandes lançamentos</h3>
-                <p>Explore banners imersivos com animações e animes em destaque, apresentados com visual premium e glow sutil, remetendo à energia dos mangás Shonen Jump.</p>
+                <p>Explore banners imersivos com animações e animes em destaque, apresentados com um visual limpo e elegante.</p>
             </div>
         </div>
 
-        <div class="content-block">
-            <div class="block-banner">
-                <div class="shape-square"></div>
-                <div class="shape-circle"></div>
-                <svg class="shape-triangle" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M32 0L64 64H0L32 0Z" />
-                </svg>
-            </div>
-            <div class="block-text">
+        <div class="block-item-clean reverse">
+            <div class="block-img-placeholder"></div>
+            <div class="block-txt-clean">
                 <h3>Destaque de personagens</h3>
-                <p>Conheça personagens icônicos das animações, com cards individuais, capas de impacto e notas de popularidade semanais. Ideal para fãs acompanharem seus favoritos.</p>
+                <p>Conheça personagens icônicos das animações, com cards individuais e capas de impacto. Ideal para fãs.</p>
             </div>
         </div>
 
-        <div class="content-block">
-            <div class="block-banner">
-                <div class="shape-square"></div>
-                <div class="shape-circle"></div>
-                <svg class="shape-triangle" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M32 0L64 64H0L32 0Z" />
-                </svg>
-            </div>
-            <div class="block-text">
+        <div class="block-item-clean">
+            <div class="block-img-placeholder"></div>
+            <div class="block-txt-clean">
                 <h3>Categorias & Gêneros</h3>
-                <p>Navegue por gêneros - Shonen, Seinen, Kodomo, Comédia, Ação e mais. Cada sessão separa animes, animações, filmes e séries com identidade visual exclusiva.</p>
+                <p>Navegue por gêneros - Shonen, Seinen, Kodomo e Comédia. Cada sessão estruturada com muito espaço para respirar.</p>
             </div>
         </div>
 
     </section>
 
-    <section class="rankings-section">
-        <div class="ranking-item">
+    <section class="rank-clean">
+        <div class="rank-item-clean">
             <h2>#1</h2>
             <span>Mais popular</span>
         </div>
-        <div class="ranking-item">
+        <div class="rank-item-clean">
             <h2>#2</h2>
             <span>Melhor nota</span>
         </div>
-        <div class="ranking-item">
+        <div class="rank-item-clean">
             <h2>#3</h2>
             <span>Favorito comunidade</span>
         </div>
     </section>
 
-    <section class="faq-section">
-        <details class="faq-item">
-            <summary>
-                <span>+</span> Como funciona o ranking semanal?
-            </summary>
-            <div class="faq-content">
-                <p>O ranking é atualizado toda segunda-feira cruzando as avaliações da nossa comunidade, volume de acessos na página da obra e engajamento nos fóruns.</p>
-            </div>
+    <section class="faq-clean">
+        <details class="faq-det-clean">
+            <summary><span>+</span> Como funciona o ranking semanal?</summary>
+            <p>O ranking é atualizado toda segunda-feira cruzando as avaliações da nossa comunidade e engajamento.</p>
         </details>
 
-        <details class="faq-item">
-            <summary>
-                <span>+</span> Como os favoritos são escolhidos?
-            </summary>
-            <div class="faq-content">
-                <p>Os favoritos são definidos baseados puramente no número de usuários que adicionam uma animação ou personagem específico em suas listas pessoais de "Favoritos".</p>
-            </div>
+        <details class="faq-det-clean">
+            <summary><span>+</span> Como os favoritos são escolhidos?</summary>
+            <p>Os favoritos são definidos baseados puramente no número de usuários que adicionam uma animação em suas listas.</p>
         </details>
 
-        <details class="faq-item">
-            <summary>
-                <span>+</span> Posso filtrar por gênero específico?
-            </summary>
-            <div class="faq-content">
-                <p>Sim! Você pode usar a nossa ferramenta de busca avançada para filtrar obras por gêneros como Ação, Shonen, Seinen, Isekai, além de filtrar por estúdio e ano de lançamento.</p>
-            </div>
+        <details class="faq-det-clean">
+            <summary><span>+</span> Posso filtrar por gênero específico?</summary>
+            <p>Sim! Você pode usar a nossa ferramenta de busca avançada para filtrar obras por gêneros como Ação e Shonen.</p>
         </details>
     </section>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-title">Navegação</span>
+    <footer class="ftr-clean">
+        <div class="ftr-grid-clean">
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Navegação</span>
                 <a href="#">Filmes</a>
                 <a href="#">Séries</a>
                 <a href="#">Animações</a>
             </div>
-            <div class="footer-col">
-                <span class="footer-title">Populares</span>
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Populares</span>
                 <a href="#">Mais Assistidos</a>
                 <a href="#">Tendências</a>
                 <a href="#">Top 10</a>
             </div>
-            <div class="footer-col">
-                <span class="footer-title">Comunidade</span>
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Comunidade</span>
                 <a href="#">Avaliações</a>
                 <a href="#">Reviews</a>
                 <a href="#">Equipe</a>
             </div>
-            <div class="footer-col">
-                <span class="footer-title">Sobre</span>
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Sobre</span>
                 <a href="#">Contato</a>
                 <a href="#">Termos de Uso</a>
-                <a href="#">Política de Privacidade</a>
+                <a href="#">Privacidade</a>
             </div>
         </div>
     </footer>
