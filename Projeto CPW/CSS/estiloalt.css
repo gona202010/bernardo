@@ -1,7 +1,11 @@
-/* ========================================================
-   TEMA MINIMALISTA DARK / GRAYSCALE (EditByAkashi)
-   ======================================================== */
-
+a,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+    color: #ffffff !important;
+    text-decoration: none;
+}
 :root {
     --bg-dark: #000000;       /* Fundo preto puro */
     --bg-surface: #111111;    /* Cinza muito escuro para destacar áreas */
@@ -311,4 +315,18 @@ a {
 
 .ftr-col-clean a:hover {
     color: var(--text-white);
+}
+#desenho{
+    display:block;
+    margin: 0 auto;
+    max-width: 100%;
+    border-radius: 15px;
+}
+.linha-divisoria{
+    border: none;
+    height: 2px;
+    background-color: #333333;
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 10px;
 }
