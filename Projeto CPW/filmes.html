@@ -7,127 +7,113 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="CSS/estilo.css">
+    <link rel="stylesheet" href="CSS/estiloalt.css">
 </head>
 <body>
 
-    <header class="header">
-        <div class="logo">Recomendações de Animações<sup>&reg;</sup></div>
-        <nav class="nav-links">
-            <a href="#">Início</a>
+<header class="hdr-clean">
+        <div class="logo-clean">Recomendações de Animações<span class="tm-clean">&reg;</span></div>
+        <nav style="display: flex; gap: 2.5rem;">
+            <a href="inicio.html">Início</a>
+            <a href="#">Filmes</a>
             <a href="series.html">Séries</a>
             <a href="animes.html">Animações</a>
+            <a href="ranking1.html">Ranking</a>
         </nav>
     </header>
 
-    <section class="hero">
-        <h1>Descubra Filmes.</h1>
-        <p>Explore lançamentos, avaliações e trailers.</p>
-        <a href="https://www.cinemark.com.br/filme/backrooms" target="_blank" ><button class="btn">Assista</button></a>
+
+    <section class="hero-clean">
+        <h1 class="title-clean">Descubra Filmes.</h1>
+        <p class="subtitle-clean">Explore lançamentos, avaliações e trailers.</p>
+        <a href="https://youtu.be/_iwJcy_Y1o4?si=p-jINlxk-DXi1gDi" target="_blank"><button class="btn-clean">Assista</button></a>
     </section>
 
-    <section class="banner-section">
-        <div class="main-banner">
-        <img class="main-banner" src="imagens/backrooms.jpg" alt="">
-            </svg>
+<section class="vid-section-clean">
+        <div class="vid-wrapper-clean">
+            <video src="Video/condor1.mp4" width="1000" height="562" style="border-radius: 24px; object-fit: cover; background-color: #000;" autoplay loop muted playsinline></video>
         </div>
     </section>
 
-    <section class="catalog-header">
-        <h2>Cinematográfico. Moderno. Premium.</h2>
-        <p>Seu catálogo definitivo<br>de filmes para assistir.</p>
-    </section>
 
-    <section class="grid-section">
-        <div class="grid-container">
-            <div class="grid-box">
-                <div class="shape-square-lg"></div>
-            </div>
-            <div class="grid-box">
-                <div class="shape-circle-lg"></div>
-            </div>
-            <div class="grid-box">
-                <svg class="shape-triangle-lg" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M32 0L64 64H0L32 0Z" />
-                </svg>
-            </div>
-            <div class="grid-box">
-                <div class="shape-square-lg"></div>
+    <hr class="linha-divisoria">
+
+    <section class="intro-clean">
+        <h2>Descubra os filmes mais amados pela comunidade.</h2>
+        <p>Explore recomendações exclusivas, conheça personagens inesquecíveis e mergulhe em histórias que marcaram gerações. Um catálogo criado para verdadeiros fãs de cinema!</p>
+    </section>
+    <section class="blocks-clean">
+
+        <div class="block-item-clean">
+            <img class="block-img-placeholder" src="imagens/supermanbanner.avif" alt="Superman">
+            <div class="block-txt-clean">
+                <h3><a href="https://www.netflix.com/br/title/70142405" target="_blank">Superman</a></h3>
+                <p> Veja o novo filme de super-herói mais bem avaliado da atualidade. Superman o filme é a história de um dos heróis mais icônicos da cultura pop.</p>
             </div>
         </div>
-    </section>
 
-    <section class="features-section">
-        <div class="features-grid">
-            
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M4 6h16M4 10h16M4 14h16M4 18h16M8 6v12M16 6v12"></path></svg>
-                <span>Avaliações Premium</span>
+        <div class="block-item-clean reverse">
+            <img class="block-img-placeholder" src="imagens/DiaboVesteprada.png" alt="Diabo Veste Prada">
+            <div class="block-txt-clean">
+                <h3><a href="https://play.hbomax.com/show/28cb33be-0a53-4604-a4eb-0562593798aa?utm_source=universal_search" target="_blank">Diabo Veste Prada</a></h3>
+                <p>Assista ao filme que revolucionou o gênero de comédia romântica. Diabo Veste Prada se tornou um clássico do cinema apos a seu lançamento tendo sido um filme que foi amplamente elogiado.</p>
             </div>
-            
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"></path></svg>
-                <span>Melhores Notas</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
-                <span>Gêneros Diversos</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg>
-                <span>Duração</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
-                <span>Trailers</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><circle cx="12" cy="12" r="3"></circle></svg>
-                <span>Sinopses Curtas</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="15" rx="2" ry="2"></rect><polyline points="17 2 12 7 7 2"></polyline></svg>
-                <span>Streaming</span>
-            </div>
-
-            <div class="feature-item">
-                <svg class="feature-icon" viewBox="0 0 24 24"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path><polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline><line x1="12" y1="22.08" x2="12" y2="12"></line></svg>
-                <span>Descubra Mais</span>
-            </div>
-
         </div>
+
+        <div class="block-item-clean">
+            <img class="block-img-placeholder" src="imagens/a-hora-do-mal.png" alt="A Hora do Mal">
+            <div class="block-txt-clean">
+                <h3>A Hora do Mal</h3>
+                <p>Descubra A Hora do Mal, o filme que trouxe uma nova abordagem para o gênero de terror e suspense. foi um dos mais bem avaliados da atualidade.</p>
+            </div>
+        </div>
+
     </section>
 
-    <footer class="footer">
-        <div class="footer-grid">
-            <div class="footer-col">
-                <span class="footer-title">Navegação</span>
+    <hr class="linha-divisoria">
+
+    <section class="faq-clean">
+        <details class="faq-det-clean">
+            <summary><span>+</span> Como funciona o ranking semanal?</summary>
+            <p>O ranking é atualizado toda segunda-feira cruzando as avaliações da nossa comunidade e engajamento.</p>
+        </details>
+
+        <details class="faq-det-clean">
+            <summary><span>+</span> Como os favoritos são escolhidos?</summary>
+            <p>Os favoritos são definidos baseados puramente no número de usuários que adicionam uma animação em suas listas.</p>
+        </details>
+
+        <details class="faq-det-clean">
+            <summary><span>+</span> Posso filtrar por gênero específico?</summary>
+            <p>Sim! Você pode usar a nossa ferramenta de busca avançada para filtrar obras por gêneros como Ação e Shonen.</p>
+        </details>
+    </section>
+
+    <footer class="ftr-clean">
+        <div class="ftr-grid-clean">
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Navegação</span>
                 <a href="#">Filmes</a>
-                <a href="#">Séries</a>
-                <a href="#">Animações</a>
+                <a href="series.html">Séries</a>
+                <a href="animes.html">Animações</a>
             </div>
-            <div class="footer-col">
-                <span class="footer-title">Populares</span>
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Populares</span>
                 <a href="#">Mais Assistidos</a>
                 <a href="#">Tendências</a>
                 <a href="#">Top 10</a>
             </div>
-            <div class="footer-col">
-                <span class="footer-title">Comunidade</span>
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Comunidade</span>
                 <a href="#">Avaliações</a>
                 <a href="#">Reviews</a>
                 <a href="#">Equipe</a>
             </div>
-            <div class="footer-col">
-                <span class="footer-title">Sobre</span>
+            <div class="ftr-col-clean">
+                <span class="ftr-title-clean">Sobre</span>
                 <a href="#">Contato</a>
                 <a href="#">Termos de Uso</a>
-                <a href="#">Política de Privacidade</a>
+                <a href="#">Privacidade</a>
             </div>
         </div>
     </footer>

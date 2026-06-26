@@ -1,3 +1,9 @@
+/* ========================================================
+   Professor vou explicar aqui, como eu fiz o css deu MUITO trabalho mas espero que goste do trabalho <3
+   ======================================================== *//* 
+   ========================================================
+   Cores principais e configurações iniciais (estilo modo escuro)
+   ======================================================== */
 a,
 a:visited,
 a:hover,
@@ -6,12 +12,13 @@ a:focus {
     color: #ffffff !important;
     text-decoration: none;
 }
+
 :root {
-    --bg-dark: #000000;       /* Fundo preto puro */
-    --bg-surface: #111111;    /* Cinza muito escuro para destacar áreas */
-    --text-white: #FFFFFF;    /* Textos principais em branco */
-    --text-gray: #8A8A8A;     /* Textos secundários em escala de cinza */
-    --border-gray: #222222;   /* Linhas sutis em cinza escuro */
+    --bg-dark: #000000;
+    --bg-surface: #111111;
+    --text-white: #FFFFFF;
+    --text-gray: #8A8A8A;
+    --border-gray: #222222;
 }
 
 body {
@@ -20,7 +27,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin: 0;
     padding: 0;
-    -webkit-font-smoothing: antialiased; /* Deixa as fontes nítidas no fundo escuro */
+    -webkit-font-smoothing: antialiased;
 }
 
 a {
@@ -29,7 +36,7 @@ a {
 }
 
 /* ========================================================
-   HEADER (Com linha separadora arredondada)
+   Cabeçalho do site, com a linha separadora embaixo
    ======================================================== */
 .hdr-clean {
     display: flex;
@@ -37,21 +44,20 @@ a {
     align-items: center;
     padding: 2rem 4rem;
     background-color: var(--bg-dark);
-    position: relative; /* Necessário para a linha se posicionar corretamente */
+    position: relative;
 }
 
-/* Linha separadora com borda arredondada */
 .hdr-clean::after {
     content: '';
     position: absolute;
     bottom: 0; 
     left: 50%;
     transform: translateX(-50%); 
-    width: 92%; /* Não encosta 100% nas bordas para ficar mais premium */
-    height: 2px; /* Espessura da linha */
-    background-color: #D3D3D3; /* Cor cinza claro */
-    border-radius: 10px; /* Bordas arredondadas da linha */
-    opacity: 0.2; /* Transparência sutil para não ficar gritante no fundo preto */
+    width: 92%;
+    height: 2px;
+    background-color: #D3D3D3;
+    border-radius: 10px;
+    opacity: 0.2;
 }
 
 .logo-clean {
@@ -83,7 +89,7 @@ a {
 }
 
 /* ========================================================
-   HERO
+   Área principal de destaque no início do site
    ======================================================== */
 .hero-clean {
     text-align: center;
@@ -106,8 +112,8 @@ a {
 }
 
 .btn-clean {
-    background-color: var(--text-white); /* Botão branco para contraste alto */
-    color: var(--bg-dark);                /* Texto do botão preto */
+    background-color: var(--text-white);
+    color: var(--bg-dark);
     border: none;
     padding: 0.8rem 2.5rem;
     font-size: 0.9rem;
@@ -123,7 +129,7 @@ a {
 }
 
 /* ========================================================
-   VÍDEO DESTAQUE
+   Seção para centralizar e destacar o vídeo
    ======================================================== */
 .vid-section-clean {
     display: flex;
@@ -137,7 +143,7 @@ a {
 }
 
 /* ========================================================
-   TEXTO INTRODUTÓRIO
+   Texto curto de introdução
    ======================================================== */
 .intro-clean {
     text-align: center;
@@ -161,7 +167,7 @@ a {
 }
 
 /* ========================================================
-   BLOCOS DE CONTEÚDO (Imagem Esquerda / Texto Direita)
+   Blocos alternados com imagem de um lado e texto do outro
    ======================================================== */
 .blocks-clean {
     max-width: 1000px;
@@ -183,9 +189,9 @@ a {
 .block-img-placeholder {
     flex: 1;
     height: 300px;
-    background-color: var(--bg-surface); /* Cinza muito escuro para destacar no preto */
+    background-color: var(--bg-surface);
     border-radius: 24px;
-    border: 1px solid var(--border-gray); /* Borda sutil */
+    border: 1px solid var(--border-gray);
 }
 
 .block-txt-clean {
@@ -207,14 +213,14 @@ a {
 }
 
 /* ========================================================
-   RANKINGS
+   Seção de estatísticas ou números em destaque
    ======================================================== */
 .rank-clean {
     display: flex;
     justify-content: center;
     gap: 6rem;
     padding: 6rem 2rem;
-    background-color: var(--bg-surface); /* Faixa cinza escura para separar o conteúdo */
+    background-color: var(--bg-surface);
     border-top: 1px solid var(--border-gray);
     border-bottom: 1px solid var(--border-gray);
 }
@@ -240,7 +246,7 @@ a {
 }
 
 /* ========================================================
-   FAQ
+   Perguntas frequentes  com efeito de abrir e fechar
    ======================================================== */
 .faq-clean {
     max-width: 700px;
@@ -281,7 +287,7 @@ a {
 }
 
 /* ========================================================
-   FOOTER
+   Rodapé do site com as colunas de links
    ======================================================== */
 .ftr-clean {
     border-top: 1px solid var(--border-gray);
@@ -316,13 +322,18 @@ a {
 .ftr-col-clean a:hover {
     color: var(--text-white);
 }
-#desenho{
-    display:block;
+
+/* ========================================================
+   Ajustes extras para imagens e linhas divisórias
+   ======================================================== */
+#desenho {
+    display: block;
     margin: 0 auto;
     max-width: 100%;
     border-radius: 15px;
 }
-.linha-divisoria{
+
+.linha-divisoria {
     border: none;
     height: 2px;
     background-color: #333333;
